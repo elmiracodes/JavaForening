@@ -1,0 +1,71 @@
+
+public class Forening                                             // Superklassen Förening
+{
+   private String namn;                                           // Definierar attributen för klassen Förening
+   private String adress;
+   public int registreringsar;
+
+public Forening(String namn, String adress, int registreringsar)   // Definierar konstruktor 1 med dess inparametrar
+{
+    this.namn=namn;                                                 // Tilldelar parametrar till klassvariablerna genom att skriva this framför parametrarna
+    this.adress=adress;
+    this.registreringsar=registreringsar;                          
+}
+public Forening(String namn, int registreringsar)                  // Definierar konstruktor 2  med dess inparametrar
+{
+    this.namn=namn;
+    this.registreringsar=registreringsar;
+    this.adress="";
+}
+public Forening(String namn, String adress)                        // Definierar konstruktor 3 med dess inparametrar
+{
+    this.namn=namn;        
+    this.adress=adress;
+    this.registreringsar=0;
+}
+public Forening(String namn)                                       // Definierar konstruktor 4 med en parameter
+{
+    this.namn=namn;
+    this.adress="";
+    this.registreringsar=0;
+}
+public Forening()                                                  // Definierar en parameterlös konstruktor  
+{
+    this.namn="";
+    this.adress="";
+    this.registreringsar=0;
+}
+public void setNamn(String namn)                                   
+{
+    this.namn=namn;
+}
+public void setAdress(String adress)
+{
+    this.adress=adress;
+}
+public void setRegistreringsar(int registreringsar)
+{
+    this.registreringsar=registreringsar;
+}
+public String getNamn()
+{
+    return namn;
+}
+public int getRegistreringsar()
+{
+    return registreringsar;
+}
+public String getAdress()
+{
+    return adress;
+}
+public String toString()
+{
+      return " Namn : " + namn + " Registreringsår : " + registreringsar + " " + " Adress: " + adress;
+}
+
+
+}
+
+
+
